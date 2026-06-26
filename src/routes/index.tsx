@@ -4,6 +4,8 @@ import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
 import { Services } from "@/components/site/Services";
 import { Differentials } from "@/components/site/Differentials";
+import { Courses } from "@/components/site/Courses";
+import { Products } from "@/components/site/Products";
 import { Gallery } from "@/components/site/Gallery";
 import { Testimonials } from "@/components/site/Testimonials";
 import { FinalCTA } from "@/components/site/FinalCTA";
@@ -32,6 +34,8 @@ function Index() {
       <About />
       <Services />
       <Differentials />
+      <Courses />
+      <Products />
       <Gallery />
       <Testimonials />
       <FinalCTA />
