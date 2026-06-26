@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FileText, X, ExternalLink } from "lucide-react";
+import { FileText, ExternalLink } from "lucide-react";
 import {
   Dialog,
   DialogContent,
