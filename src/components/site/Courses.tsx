@@ -80,12 +80,26 @@ export function Courses() {
                   </DialogDescription>
                 </div>
               </div>
-              <div className="h-[70vh] w-full bg-cream">
-                <iframe
-                  src={`${active.pdf}#view=FitH`}
-                  title={`Apresentação ${active.title}`}
-                  className="size-full"
-                />
+              <div className="h-[70vh] w-full overflow-y-auto overflow-x-hidden bg-cream">
+                <div className="mx-auto flex max-w-2xl flex-col gap-3 p-3 md:p-5">
+                  {active.pages.length > 0 ? (
+                    active.pages.map((src, i) => (
+                      <img
+                        key={src}
+                        src={src}
+                        alt={`${active.title} — página ${i + 1}`}
+                        loading={i === 0 ? "eager" : "lazy"}
+                        className="w-full rounded-lg shadow-[0_8px_30px_-20px_rgba(0,0,0,0.5)]"
+                      />
+                    ))
+                  ) : (
+                    <iframe
+                      src={`${active.pdf}#view=FitH`}
+                      title={`Apresentação ${active.title}`}
+                      className="h-[65vh] w-full"
+                    />
+                  )}
+                </div>
               </div>
               <div className="flex flex-wrap items-center justify-between gap-3 border-t border-border px-6 py-4">
                 <a
