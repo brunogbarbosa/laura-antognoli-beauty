@@ -5,9 +5,9 @@ import { WHATSAPP } from "./data";
 const links = [
   { label: "Sobre", href: "#sobre" },
   { label: "Tratamentos", href: "#tratamentos" },
-  { label: "Diferenciais", href: "#diferenciais" },
+  { label: "Cursos", href: "#cursos" },
+  { label: "Produtos", href: "#produtos" },
   { label: "Resultados", href: "#resultados" },
-  { label: "Depoimentos", href: "#depoimentos" },
 ];
 
 export function Navbar() {
