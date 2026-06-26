@@ -16,7 +16,7 @@ export function About() {
               loading="lazy"
               width={600}
               height={750}
-              className="aspect-[4/5] w-full rounded-[1.6rem] object-cover shadow-soft"
+              className="aspect-[4/5] w-full rounded-[1.6rem] object-cover object-top shadow-soft"
             />
           </div>
         </Reveal>

@@ -6,8 +6,8 @@ const items = [
   { src: photos.beforeAfter, label: "Lábios & Perfil", span: "row-span-2" },
   { src: photos.procedure1, label: "Procedimento" },
   { src: photos.machines, label: "Tecnologia HiPro" },
-  { src: photos.procedure2, label: "Atendimento" },
-  { src: photos.syringes, label: "Bioestimuladores" },
+  { src: photos.leather, label: "Atendimento" },
+  { src: photos.whiteSuit, label: "Elegância" },
   { src: photos.bemVinda, label: "Bem vinda", span: "row-span-2" },
 ];
 
