@@ -47,6 +47,7 @@ export const courses: Course[] = [
       "Domine a técnica autoral de lábios harmônicos, naturais e definidos — do planejamento à entrega do resultado.",
     cover: labialCover.url,
     pdf: labialPdf.url,
+    pages: pages("labial"),
   },
   {
     id: "perfiloplastia",
@@ -56,6 +57,7 @@ export const courses: Course[] = [
       "Aprenda a ler o perfil e equilibrar nariz, lábios e mento com segurança e elegância.",
     cover: perfiloCover.url,
     pdf: perfiloPdf.url,
+    pages: pages("perfiloplastia"),
   },
   {
     id: "rino",
@@ -65,6 +67,7 @@ export const courses: Course[] = [
       "Refinamento do nariz sem cirurgia, com protocolo seguro de avaliação e aplicação.",
     cover: rinoCover.url,
     pdf: rinoPdf.url,
+    pages: pages("rino"),
   },
   {
     id: "start_face",
@@ -74,6 +77,7 @@ export const courses: Course[] = [
       "O ponto de partida ideal para iniciar na injeção de preenchedores com confiança e técnica.",
     cover: startFaceCover.url,
     pdf: startFacePdf.url,
+    pages: pages("start_face"),
   },
   {
     id: "tresm",
@@ -83,6 +87,7 @@ export const courses: Course[] = [
       "Estruture o terço inferior e médio da face com a estratégia dos três pilares.",
     cover: tresmCover.url,
     pdf: tresmPdf.url,
+    pages: pages("tresm"),
   },
   {
     id: "essencia",
@@ -92,6 +97,7 @@ export const courses: Course[] = [
       "Estimule colágeno e revitalize a pele com protocolos de bioestimuladores.",
     cover: essenciaCover.url,
     pdf: essenciaPdf.url,
+    pages: pages("essencia"),
   },
   {
     id: "lavieen",
@@ -101,5 +107,6 @@ export const courses: Course[] = [
       "Protocolo de luminosidade e qualidade de pele com a tecnologia Lavieen.",
     cover: lavieenCover.url,
     pdf: lavieenPdf.url,
+    pages: pages("lavieen"),
   },
 ];
