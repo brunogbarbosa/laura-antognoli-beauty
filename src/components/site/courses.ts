@@ -13,6 +13,21 @@ import labialPdf from "@/assets/courses/labial.pdf.asset.json";
 import rinoCover from "@/assets/courses/rino-cover.jpg.asset.json";
 import rinoPdf from "@/assets/courses/rino.pdf.asset.json";
 
+const pageModules = import.meta.glob("@/assets/courses/pages/*.jpg.asset.json", {
+  eager: true,
+}) as Record<string, { default: { url: string } }>;
+
+function pages(id: string): string[] {
+  const out: string[] = [];
+  for (let n = 1; n <= 8; n++) {
+    const match = Object.entries(pageModules).find(([path]) =>
+      path.endsWith(`/${id}-${n}.jpg.asset.json`),
+    );
+    if (match) out.push(match[1].default.url);
+  }
+  return out;
+}
+
 export type Course = {
   id: string;
   title: string;
@@ -20,6 +35,7 @@ export type Course = {
   description: string;
   cover: string;
   pdf: string;
+  pages: string[];
 };
 
 export const courses: Course[] = [
