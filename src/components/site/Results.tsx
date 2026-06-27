@@ -72,9 +72,6 @@ export function Results() {
                 </span>
                 <span className="absolute bottom-4 left-4 right-4">
                   <span className="block font-display text-xl italic text-ivory">{p.title}</span>
-                  <span className="label-caps mt-1 block text-[0.5rem] text-ivory/80">
-                    {p.caption}
-                  </span>
                 </span>
               </motion.button>
             </Reveal>
@@ -114,8 +111,8 @@ export function Results() {
                   <DialogTitle className="font-display text-2xl italic text-ivory">
                     {active.title}
                   </DialogTitle>
-                  <DialogDescription className="mt-1 text-xs font-light text-ivory/70">
-                    {active.caption}
+                  <DialogDescription className="sr-only">
+                    {active.title}
                   </DialogDescription>
                 </div>
                 <a

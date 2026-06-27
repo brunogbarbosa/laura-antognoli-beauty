@@ -8,6 +8,7 @@ import bigbumm from "@/assets/results/bigbumm.jpg";
 import botox from "@/assets/results/botox.jpg";
 import lavieen1 from "@/assets/results/lavieen-1.jpg";
 import lavieen2 from "@/assets/results/lavieen-2.jpg";
+import hipro from "@/assets/results/hipro.jpg";
 
 export type ResultPhoto = {
   src: string;
@@ -26,4 +27,5 @@ export const resultPhotos: ResultPhoto[] = [
   { src: perfilo3, title: "Perfiloplastia", caption: "Equilíbrio do perfil facial" },
   { src: labial3, title: "Preenchimento Labial", caption: "Lábios harmônicos e definidos" },
   { src: bigbumm, title: "Bigbumm", caption: "Tratamento corporal — textura e firmeza" },
+  { src: hipro, title: "HiPro", caption: "Ultrassom micro & macrofocado — lifting facial" },
 ];
