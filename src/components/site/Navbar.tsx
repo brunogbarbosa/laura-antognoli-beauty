@@ -8,6 +8,7 @@ const links = [
   { label: "Cursos", href: "#cursos" },
   { label: "Produtos", href: "#produtos" },
   { label: "A Clínica", href: "#clinica" },
+  { label: "Antes & Depois", href: "#antes-depois" },
   { label: "Resultados", href: "#resultados" },
 ];
 

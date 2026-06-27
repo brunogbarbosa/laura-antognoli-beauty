@@ -6,6 +6,7 @@ import { Differentials } from "@/components/site/Differentials";
 import { Courses } from "@/components/site/Courses.tsx";
 import { Products } from "@/components/site/Products";
 import { Clinic } from "@/components/site/Clinic";
+import { Results } from "@/components/site/Results";
 import { Gallery } from "@/components/site/Gallery";
 import { Testimonials } from "@/components/site/Testimonials";
 import { FinalCTA } from "@/components/site/FinalCTA";
@@ -23,6 +24,7 @@ export function App() {
       <Courses />
       <Products />
       <Clinic />
+      <Results />
       <Gallery />
       <Testimonials />
       <FinalCTA />
