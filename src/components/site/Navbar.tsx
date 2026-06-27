@@ -7,6 +7,7 @@ const links = [
   { label: "Tratamentos", href: "#tratamentos" },
   { label: "Cursos", href: "#cursos" },
   { label: "Produtos", href: "#produtos" },
+  { label: "A Clínica", href: "#clinica" },
   { label: "Resultados", href: "#resultados" },
 ];
 

@@ -5,6 +5,7 @@ import { Services } from "@/components/site/Services";
 import { Differentials } from "@/components/site/Differentials";
 import { Courses } from "@/components/site/Courses.tsx";
 import { Products } from "@/components/site/Products";
+import { Clinic } from "@/components/site/Clinic";
 import { Gallery } from "@/components/site/Gallery";
 import { Testimonials } from "@/components/site/Testimonials";
 import { FinalCTA } from "@/components/site/FinalCTA";
@@ -21,6 +22,7 @@ export function App() {
       <Differentials />
       <Courses />
       <Products />
+      <Clinic />
       <Gallery />
       <Testimonials />
       <FinalCTA />
