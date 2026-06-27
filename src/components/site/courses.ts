@@ -1,29 +1,31 @@
-import startFaceCover from "@/assets/courses/start_face-cover.jpg.asset.json";
+import startFaceCover from "@/assets/courses/start_face-cover.jpg";
 import startFacePdf from "@/assets/courses/start_face.pdf.asset.json";
-import tresmCover from "@/assets/courses/tresm-cover.jpg.asset.json";
+import tresmCover from "@/assets/courses/tresm-cover.jpg";
 import tresmPdf from "@/assets/courses/tresm.pdf.asset.json";
-import lavieenCover from "@/assets/courses/lavieen-cover.jpg.asset.json";
+import lavieenCover from "@/assets/courses/lavieen-cover.jpg";
 import lavieenPdf from "@/assets/courses/lavieen.pdf.asset.json";
-import essenciaCover from "@/assets/courses/essencia-cover.jpg.asset.json";
+import essenciaCover from "@/assets/courses/essencia-cover.jpg";
 import essenciaPdf from "@/assets/courses/essencia.pdf.asset.json";
-import perfiloCover from "@/assets/courses/perfiloplastia-cover.jpg.asset.json";
+import perfiloCover from "@/assets/courses/perfiloplastia-cover.jpg";
 import perfiloPdf from "@/assets/courses/perfiloplastia.pdf.asset.json";
-import labialCover from "@/assets/courses/labial-cover.jpg.asset.json";
+import labialCover from "@/assets/courses/labial-cover.jpg";
 import labialPdf from "@/assets/courses/labial.pdf.asset.json";
-import rinoCover from "@/assets/courses/rino-cover.jpg.asset.json";
+import rinoCover from "@/assets/courses/rino-cover.jpg";
 import rinoPdf from "@/assets/courses/rino.pdf.asset.json";
 
-const pageModules = import.meta.glob("../../assets/courses/pages/*.jpg.asset.json", {
+const pageModules = import.meta.glob("../../assets/courses/pages/*.jpg", {
   eager: true,
-}) as Record<string, { default: { url: string } }>;
+  query: "?url",
+  import: "default",
+}) as Record<string, string>;
 
 function pages(id: string): string[] {
   const out: string[] = [];
   for (let n = 1; n <= 8; n++) {
     const match = Object.entries(pageModules).find(([path]) =>
-      path.endsWith(`/${id}-${n}.jpg.asset.json`),
+      path.endsWith(`/${id}-${n}.jpg`),
     );
-    if (match) out.push(match[1].default.url);
+    if (match) out.push(match[1]);
   }
   return out;
 }
