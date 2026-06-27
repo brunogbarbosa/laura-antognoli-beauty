@@ -34,8 +34,8 @@ export const clinicPhotos: ClinicPhoto[] = [
   { src: salaVinho, title: "Sala Vinho", caption: "Tons profundos, ouro e esculturas de lábios" },
   { src: copaVitrine, title: "Copa & Vitrine", caption: "Mesa de reuniões com arcos de exposição iluminados" },
   { src: salaProdutos, title: "Sala de Produtos", caption: "Prateleiras arqueadas repletas de produtos premium" },
-  { src: salaReuniao, title: "Sala de Reunião", caption: "Mesa redonda e mural de olhar marcante" },
+  { src: salaReuniao, title: "Sala de Curso", caption: "Mesa redonda e mural para aulas e mentorias" },
   { src: loungeRecepcao, title: "Recepção Lounge", caption: "Sofá curvo vinho e arte em linha contínua" },
-  { src: lavaboMarmore, title: "Lavabo Mármore", caption: "Bancada de mármore com prateleiras douradas" },
+  { src: lavaboMarmore, title: "Sala de Atendimento", caption: "Bancada de mármore com prateleiras douradas" },
   { src: lavabo, title: "Lavabo", caption: "Paredes vinho, ouro e mármore iluminado" },
 ];

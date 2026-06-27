@@ -1,14 +1,16 @@
 import { motion } from "framer-motion";
-import { Sparkles, Smile, Activity, Droplet, Scissors, Syringe } from "lucide-react";
+import { Sparkles, Smile, Activity, Droplet, Wand2, Syringe } from "lucide-react";
 import { Reveal, Divider } from "./Reveal";
 
 const services = [
   { icon: Smile, name: "Lábios & Perfiloplastia", desc: "Contorno, volume e harmonia do perfil com naturalidade." },
   { icon: Sparkles, name: "Full Face", desc: "Harmonização completa que valoriza todos os seus traços." },
   { icon: Activity, name: "HiPro", desc: "Tecnologia de ultrassom para firmeza e lifting sem cortes." },
-  { icon: Droplet, name: "Lokinhos", desc: "Realce sutil e estratégico para um glow instantâneo." },
-  { icon: Scissors, name: "Bichectomia", desc: "Definição do contorno facial e afinamento das maçãs." },
-  { icon: Syringe, name: "Bioestimuladores", desc: "Estímulo natural de colágeno para uma pele renovada." },
+  { icon: Syringe, name: "Toxina Botulínica", desc: "Suavização de linhas de expressão com naturalidade." },
+  { icon: Droplet, name: "Lavieen Glow", desc: "Luminosidade e qualidade de pele com tecnologia avançada." },
+  { icon: Wand2, name: "Rinomodelação", desc: "Refinamento do nariz sem cirurgia, com protocolo seguro." },
+  { icon: Activity, name: "Bigbumm", desc: "Tratamento corporal para textura e firmeza dos glúteos." },
+  { icon: Sparkles, name: "Bioestimuladores", desc: "Estímulo natural de colágeno para uma pele renovada." },
 ];
 
 export function Services() {
