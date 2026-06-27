@@ -1,21 +1,21 @@
-import white from "@/assets/photos/laura-white.jpg.asset.json";
-import red from "@/assets/photos/laura-red.jpg.asset.json";
-import lips from "@/assets/photos/laura-lips.jpg.asset.json";
-import glow from "@/assets/photos/laura-glow.jpg.asset.json";
-import leatherImg from "@/assets/photos/laura-leather.jpg.asset.json";
-import gloves from "@/assets/photos/laura-gloves.jpg.asset.json";
+import white from "@/assets/photos/laura-white.jpg";
+import red from "@/assets/photos/laura-red.jpg";
+import lips from "@/assets/photos/laura-lips.jpg";
+import glow from "@/assets/photos/laura-glow.jpg";
+import leatherImg from "@/assets/photos/laura-leather.jpg";
+import gloves from "@/assets/photos/laura-gloves.jpg";
 
 export const photos = {
-  whiteSuit: white.url,
-  machines: glow.url,
-  bemVinda: gloves.url,
-  leather: leatherImg.url,
-  logo: lips.url,
-  beforeAfter: red.url,
-  procedure1: lips.url,
-  procedure2: gloves.url,
-  syringes: glow.url,
-  biogelis: red.url,
+  whiteSuit: white,
+  machines: glow,
+  bemVinda: gloves,
+  leather: leatherImg,
+  logo: lips,
+  beforeAfter: red,
+  procedure1: lips,
+  procedure2: gloves,
+  syringes: glow,
+  biogelis: red,
 };
 
 export const WHATSAPP = "https://wa.me/5519971081708";
