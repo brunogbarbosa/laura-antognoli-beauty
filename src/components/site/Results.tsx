@@ -111,8 +111,8 @@ export function Results() {
                   <DialogTitle className="font-display text-2xl italic text-ivory">
                     {active.title}
                   </DialogTitle>
-                  <DialogDescription className="mt-1 text-xs font-light text-ivory/70">
-                    {active.caption}
+                  <DialogDescription className="sr-only">
+                    {active.title}
                   </DialogDescription>
                 </div>
                 <a
