@@ -39,7 +39,7 @@ export function Hero() {
       <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-10 px-5 md:grid-cols-[1.1fr_0.9fr] md:px-10">
         <motion.div variants={container} initial="hidden" animate="show">
           <motion.p variants={item} className="label-caps mb-6 text-rosegold">
-            Medicina Estética Avançada · Sumaré, SP
+            BioMedicina Estética Avançada · Sumaré, SP
           </motion.p>
           <motion.h1
             variants={item}
