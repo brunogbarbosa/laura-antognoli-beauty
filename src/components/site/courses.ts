@@ -13,7 +13,7 @@ import labialPdf from "@/assets/courses/labial.pdf.asset.json";
 import rinoCover from "@/assets/courses/rino-cover.jpg.asset.json";
 import rinoPdf from "@/assets/courses/rino.pdf.asset.json";
 
-const pageModules = import.meta.glob("@/assets/courses/pages/*.jpg.asset.json", {
+const pageModules = import.meta.glob("../../assets/courses/pages/*.jpg.asset.json", {
   eager: true,
 }) as Record<string, { default: { url: string } }>;
 
@@ -83,8 +83,7 @@ export const courses: Course[] = [
     id: "tresm",
     title: "Harmonia dos 3M",
     subtitle: "Malar, Mento e Mandíbula",
-    description:
-      "Estruture o terço inferior e médio da face com a estratégia dos três pilares.",
+    description: "Estruture o terço inferior e médio da face com a estratégia dos três pilares.",
     cover: tresmCover.url,
     pdf: tresmPdf.url,
     pages: pages("tresm"),
@@ -93,8 +92,7 @@ export const courses: Course[] = [
     id: "essencia",
     title: "Essência Vital",
     subtitle: "Rejuvenescimento com Bioestimuladores",
-    description:
-      "Estimule colágeno e revitalize a pele com protocolos de bioestimuladores.",
+    description: "Estimule colágeno e revitalize a pele com protocolos de bioestimuladores.",
     cover: essenciaCover.url,
     pdf: essenciaPdf.url,
     pages: pages("essencia"),
@@ -103,8 +101,7 @@ export const courses: Course[] = [
     id: "lavieen",
     title: "Lavieen Glow",
     subtitle: "Tecnologia de Glow & Skin Quality",
-    description:
-      "Protocolo de luminosidade e qualidade de pele com a tecnologia Lavieen.",
+    description: "Protocolo de luminosidade e qualidade de pele com a tecnologia Lavieen.",
     cover: lavieenCover.url,
     pdf: lavieenPdf.url,
     pages: pages("lavieen"),
