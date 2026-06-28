@@ -19,4 +19,5 @@ export const photos = {
 };
 
 export const WHATSAPP = "https://wa.me/5519971081708";
+export const WHATSAPP_GROUP = "https://chat.whatsapp.com/GRXKrgF8nrqEAByQ8LZb0q?s=sw&p=i&mlu=2";
 export const INSTAGRAM = "https://instagram.com/dralauraantognoli";
