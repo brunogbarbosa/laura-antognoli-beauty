@@ -21,10 +21,10 @@ export function App() {
       <About />
       <Services />
       <Differentials />
-      <Courses />
       <Products />
       <Clinic />
       <Results />
+      <Courses />
       <Gallery />
       <Testimonials />
       <FinalCTA />
