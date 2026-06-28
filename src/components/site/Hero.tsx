@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { photos, WHATSAPP } from "./data";
+import { Crown } from "lucide-react";
+import { photos, WHATSAPP, WHATSAPP_GROUP } from "./data";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 const container = {
@@ -64,6 +65,15 @@ export function Hero() {
               className="rounded-full bg-wine px-8 py-4 label-caps text-[0.62rem] text-ivory transition-all hover:bg-wine-deep hover:shadow-soft"
             >
               Agendar pelo WhatsApp
+            </a>
+            <a
+              href={WHATSAPP_GROUP}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-rosegold to-champagne px-8 py-4 label-caps text-[0.62rem] text-wine shadow-soft transition-all hover:brightness-105"
+            >
+              <Crown className="size-3.5" strokeWidth={1.5} />
+              Grupo VIP
             </a>
             <a
               href="#tratamentos"
