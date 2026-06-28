@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { WHATSAPP } from "./data";
+import { Crown } from "lucide-react";
+import { WHATSAPP, WHATSAPP_GROUP } from "./data";
 
 export function FinalCTA() {
   return (
@@ -33,6 +34,15 @@ export function FinalCTA() {
           className="mt-10 inline-block rounded-full bg-ivory px-10 py-4 label-caps text-[0.62rem] text-wine transition-all hover:bg-champagne hover:shadow-soft"
         >
           Falar com a Dra. Laura no WhatsApp
+        </a>
+        <a
+          href={WHATSAPP_GROUP}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-flex items-center gap-2 rounded-full border border-ivory/40 px-8 py-3.5 label-caps text-[0.62rem] text-ivory transition-all hover:bg-ivory/10"
+        >
+          <Crown className="size-3.5" strokeWidth={1.5} />
+          Entrar no grupo VIP
         </a>
       </motion.div>
     </section>
