@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { WHATSAPP } from "./data";
 
 const links = [
-  { label: "Sobre", href: "#sobre" },
-  { label: "Tratamentos", href: "#tratamentos" },
-  { label: "Cursos", href: "#cursos" },
-  { label: "Produtos", href: "#produtos" },
-  { label: "A Clínica", href: "#clinica" },
-  { label: "Antes & Depois", href: "#antes-depois" },
-  { label: "Resultados", href: "#resultados" },
+  { label: "Sobre", href: "/#sobre" },
+  { label: "Tratamentos", href: "/#tratamentos" },
+  { label: "Cursos", href: "/cursos", route: true },
+  { label: "Produtos", href: "/#produtos" },
+  { label: "A Clínica", href: "/#clinica" },
+  { label: "Antes & Depois", href: "/#antes-depois" },
+  { label: "Resultados", href: "/#resultados" },
 ];
 
 export function Navbar() {
@@ -35,24 +36,33 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-10">
-        <a href="#top" className="flex flex-col leading-none">
+        <Link to="/" className="flex flex-col leading-none">
           <span className="font-display text-xl italic text-wine md:text-2xl">
             Dra. Laura Antognoli
           </span>
           <span className="label-caps mt-0.5 text-[0.55rem] text-taupe">
             Estética Avançada
           </span>
-        </a>
+        </Link>
 
         <ul className="hidden items-center gap-8 lg:flex">
           {links.map((l) => (
             <li key={l.href}>
-              <a
-                href={l.href}
-                className="label-caps text-[0.62rem] text-ink/70 transition-colors hover:text-wine"
-              >
-                {l.label}
-              </a>
+              {l.route ? (
+                <Link
+                  to={l.href}
+                  className="label-caps text-[0.62rem] text-ink/70 transition-colors hover:text-wine"
+                >
+                  {l.label}
+                </Link>
+              ) : (
+                <a
+                  href={l.href}
+                  className="label-caps text-[0.62rem] text-ink/70 transition-colors hover:text-wine"
+                >
+                  {l.label}
+                </a>
+              )}
             </li>
           ))}
         </ul>
@@ -82,13 +92,23 @@ export function Navbar() {
           <ul className="flex flex-col gap-5">
             {links.map((l) => (
               <li key={l.href}>
-                <a
-                  href={l.href}
-                  onClick={() => setOpen(false)}
-                  className="label-caps text-xs text-ink/75"
-                >
-                  {l.label}
-                </a>
+                {l.route ? (
+                  <Link
+                    to={l.href}
+                    onClick={() => setOpen(false)}
+                    className="label-caps text-xs text-ink/75"
+                  >
+                    {l.label}
+                  </Link>
+                ) : (
+                  <a
+                    href={l.href}
+                    onClick={() => setOpen(false)}
+                    className="label-caps text-xs text-ink/75"
+                  >
+                    {l.label}
+                  </a>
+                )}
               </li>
             ))}
             <li>
