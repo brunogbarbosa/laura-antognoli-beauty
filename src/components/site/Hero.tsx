@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Crown } from "lucide-react";
+import { Crown, GraduationCap } from "lucide-react";
+import { Link } from "react-router-dom";
 import { photos, WHATSAPP, WHATSAPP_GROUP } from "./data";
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -75,6 +76,13 @@ export function Hero() {
               <Crown className="size-3.5" strokeWidth={1.5} />
               Grupo VIP
             </a>
+            <Link
+              to="/cursos"
+              className="inline-flex items-center gap-2 rounded-full bg-wine/90 px-8 py-4 label-caps text-[0.62rem] text-ivory transition-all hover:bg-wine-deep hover:shadow-soft"
+            >
+              <GraduationCap className="size-3.5" strokeWidth={1.5} />
+              Seja aluno
+            </Link>
             <a
               href="#tratamentos"
               className="rounded-full border border-wine/30 px-8 py-4 label-caps text-[0.62rem] text-wine transition-all hover:border-wine hover:bg-wine/5"
