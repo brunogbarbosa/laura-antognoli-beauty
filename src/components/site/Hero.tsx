@@ -81,7 +81,7 @@ export function Hero() {
               className="inline-flex items-center gap-2 rounded-full bg-wine/90 px-8 py-4 label-caps text-[0.62rem] text-ivory transition-all hover:bg-wine-deep hover:shadow-soft"
             >
               <GraduationCap className="size-3.5" strokeWidth={1.5} />
-              Seja aluno
+              Seja aluna
             </Link>
             <a
               href="#tratamentos"
